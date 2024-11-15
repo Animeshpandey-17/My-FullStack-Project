@@ -1,0 +1,55 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #5f8dbb; /* Dark gray background color */
+  }
+  
+  .navbar .navbar-brand {
+    color: #ffffff; /* White text for brand */
+    font-weight: bold; /* Bold brand name */
+  }
+  
+  .nav-link {
+    color: #ffffff; /* White text for links */
+    margin-right: 15px; /* Spacing between links */
+  }
+  
+  .nav-link:hover {
+    color: #ffc107; /* Gold color on hover */
+    transition: color 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Light border for toggle button */
+  }
+  
+  .navbar-left {
+    display: flex; /* Flexbox for left side links */
+  }
+  
+  .navbar-right {
+    display: flex; /* Flexbox for right side links */
+  }
+  
+  .navbar-right .nav-link {
+    margin-left: 15px; /* Spacing between signup and login links */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-left {
+      flex-direction: column; /* Stack links vertically on small screens */
+      width: 100%; /* Full width */
+    }
+  
+    .navbar-right {
+      flex-direction: column; /* Stack right links vertically */
+      width: 100%; /* Full width */
+      margin-top: 10px; /* Add space above right links */
+    }
+  
+    .navbar-toggler {
+      margin-left: auto; /* Push toggle button to the right */
+    }
+  }
+  
